@@ -1,7 +1,4 @@
 /* app css stylesheet */
-html{
-  font-size: 16px;
-}
 body{
   background-color: #BBBBBB;
 }
@@ -43,6 +40,7 @@ body{
 }
 
 .note {
+  position: relative;
   width:100%;
   height:auto;
   margin: 1.5em;
@@ -77,4 +75,9 @@ body{
 }
 .col4 .note{
   background-color: #B65DF3;
+}
+#resizeIcon{
+  position:absolute;
+  left: 0;
+  top: 0;
 }
