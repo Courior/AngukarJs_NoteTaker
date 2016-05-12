@@ -1,8 +1,9 @@
 'use strict';
 
-angular.module('myApp.noteFactory', ['$http'])
+angular.module('myApp.noteFactory', [])
 
-.factory(['$http', function($http) {
+.factory("noteFactoryData",['$http', function($http) {
+    var url='data/notes.json';
     return {
       getData: getData,
       addData: addData,
@@ -11,11 +12,11 @@ angular.module('myApp.noteFactory', ['$http'])
     function getData(){
       return $http.get(url);
     }
-    function getData(noteToAdd){
+    function addData(noteToAdd){
       return $http.post(url,noteToAdd);
     }
     function removeData(item){
-      return $http.delet(url + "/" + item.id)
+      return $http.delete(url + "/" + item.id)
     }
 }])
 ;
