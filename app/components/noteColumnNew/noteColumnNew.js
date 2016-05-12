@@ -6,7 +6,6 @@ angular.module('myApp.noteColumnNew', ['myApp.noteFactory'])
   noteFactoryData.getData().then(display,displayError);
   function display(response){
     $scope.notes=response.data;
-    console.log(response.data);
   }
   function displayError(response){
     $scope.notes=[
@@ -18,14 +17,16 @@ angular.module('myApp.noteColumnNew', ['myApp.noteFactory'])
         status: ""
       }
     ]
-    console.log($scope.notes);
   }
-
 }])
 .directive('noteColDir', function(){
   return {
     restrict: 'E',
     replace: true,
+    bindToController: true,
+    scope:{
+      type:"@"
+    },
     templateUrl:'components/noteColumnNew/noteColumn.html',
     controller: "NotesColCtrl",
     controllerAs: "noteColCtrl"

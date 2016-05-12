@@ -64,16 +64,16 @@ body{
 .col-sm .note p{
   overflow: hidden;
 }
-.col1 .note{
+.doing .note{
   background-color: #97FB56;
 }
-.col2 .note{
+.toDo .note{
   background-color: #FFFC58;
 }
-.col3 .note{
+.blocked .note{
   background-color: #FC5680;
 }
-.col4 .note{
+.done .note{
   background-color: #B65DF3;
 }
 #resizeIcon{
