@@ -7,7 +7,8 @@ angular.module('myApp', [
   'myApp.view2',
   'myApp.version',
   'myApp.note',
-  'myApp.noteColumnNew'
+  'myApp.noteColumnNew',
+  'myApp.noteFactory'
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/view1'});
