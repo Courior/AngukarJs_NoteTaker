@@ -57,7 +57,18 @@ body{
 .note p{
   font-size: 1em ;
 }
-
+.note.minified .description{
+  height: 3em ;
+  overflow: hidden;
+}
+.note .btn{
+  color:#BBBBBB;
+}
+.note .btn:hover{
+  background-color: rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: black;
+}
 .col-md .note p{
   overflow: auto;
 }

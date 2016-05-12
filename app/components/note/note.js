@@ -3,6 +3,11 @@
 angular.module('myApp.note', [])
 
 .controller("NotesCtrl",['$scope', function($scope) {
+  $scope.expandClass= "minified";
+  $scope.toggleCustom = function() {
+    $scope.expandClass = $scope.expandClass === 'minified' ? 'expanded': 'minified';
+    console.log($scope.expandClass);
+  };
 }])
 .directive('noteDir', function(){
   return {

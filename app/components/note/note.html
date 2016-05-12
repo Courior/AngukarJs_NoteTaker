@@ -1,7 +1,8 @@
-<div class='note' >
+<div class='note {{expandClass}}' >
     <i id="resizeIcon" class="glyphicon glyphicon-resize-full"/>
     <h2>{{noteCtrl.content.title}}</h1>
     <h3 class="hidden-xs">{{noteCtrl.content.byline}}</h2>
-    <p class="hidden-xs hidden-sm">{{noteCtrl.content.description}}</p>
-    <p class="hidden-xs hidden-sm">{{noteCtrl.content.status}}</p>
+    <p class="hidden-xs hidden-sm description">{{noteCtrl.content.description}}</p>
+
+    <button type="button" class="btn btn-link btn-block" ng-click="toggleCustom()"><i class="glyphicon glyphicon-chevron-down"/></button>
 </div>
