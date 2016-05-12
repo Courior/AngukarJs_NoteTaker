@@ -1,5 +1,5 @@
 <ul>
-  <li ng-repeat="item in notes">
+  <li ng-repeat="item in notes | filter:{status:noteColCtrl.type}">
     <note-dir fuck-you='2' content='item'></note-dir>
   </li>
 </ul>
