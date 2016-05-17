@@ -1,6 +1,6 @@
 /* app css stylesheet */
 body{
-  background-color: #807cbf;
+  background-color: #89a4c5;
 }
 .menu {
   list-style: none;
@@ -57,9 +57,17 @@ body{
 .note p{
   font-size: 1em ;
 }
+.note .description{
+  -webkit-transition: max-height 2s; /* For Safari 3.1 to 6.0 */
+  transition: max-height 2s;
+}
 .note.minified .description{
-  height: 3em ;
+  max-height: 3em ;
   overflow: hidden;
+}
+.note.expanded .description{
+  max-height: 20em ;
+  overflow: auto;
 }
 .note .btn{
   color:#BBBBBB;

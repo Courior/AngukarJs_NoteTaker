@@ -4,8 +4,10 @@ angular.module('myApp.note', [])
 
 .controller("NotesCtrl",['$scope', function($scope) {
   $scope.expandClass= "minified";
+  $scope.iconClass="glyphicon-chevron-down";
   $scope.toggleCustom = function() {
     $scope.expandClass = $scope.expandClass === 'minified' ? 'expanded': 'minified';
+    $scope.iconClass = $scope.iconClass === 'glyphicon-chevron-down' ? 'glyphicon-chevron-up': 'glyphicon-chevron-down';
     console.log($scope.expandClass);
   };
 }])

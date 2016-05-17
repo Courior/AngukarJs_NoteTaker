@@ -2,7 +2,9 @@
     <i id="resizeIcon" class="glyphicon glyphicon-resize-full"/>
     <h2>{{noteCtrl.content.title}}</h1>
     <h3 class="hidden-xs">{{noteCtrl.content.byline}}</h2>
-    <p class="hidden-xs hidden-sm description">{{noteCtrl.content.description}}</p>
+    <div class="hidden-xs hidden-sm description">
+      <p>{{noteCtrl.content.description}}</p>
+    </div>
 
-    <button type="button" class="btn btn-link btn-block" ng-click="toggleCustom()"><i class="glyphicon glyphicon-chevron-down"/></button>
+    <button type="button" class="btn btn-link btn-block" ng-click="toggleCustom()"><i class="glyphicon {{iconClass}}"/></button>
 </div>
